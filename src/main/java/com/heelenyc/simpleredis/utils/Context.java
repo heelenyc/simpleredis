@@ -8,6 +8,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.heelenyc.commonlib.NamedThreadFactory;
 import com.heelenyc.simpleredis.api.model.ClientInfo;
 
 /**

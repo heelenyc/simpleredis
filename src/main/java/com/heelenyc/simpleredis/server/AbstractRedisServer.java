@@ -14,11 +14,11 @@ import io.netty.handler.timeout.IdleStateHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.heelenyc.commonlib.NamedThreadFactory;
 import com.heelenyc.simpleredis.api.IRedisServer;
 import com.heelenyc.simpleredis.coder.RedisCommandDecoder;
 import com.heelenyc.simpleredis.coder.RedisReplyEncoder;
 import com.heelenyc.simpleredis.handler.AbstractRedisCommandHandler;
-import com.heelenyc.simpleredis.utils.NamedThreadFactory;
 
 /**
  * @author yicheng

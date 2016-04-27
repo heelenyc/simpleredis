@@ -1,1 +1,1 @@
-# simple redis framework
+# simple redis framework base string
