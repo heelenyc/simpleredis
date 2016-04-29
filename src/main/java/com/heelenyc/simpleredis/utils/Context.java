@@ -1,5 +1,7 @@
 package com.heelenyc.simpleredis.utils;
 
+import heelenyc.commonlib.NamedThreadFactory;
+
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -8,7 +10,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
-import com.heelenyc.commonlib.NamedThreadFactory;
 import com.heelenyc.simpleredis.api.model.ClientInfo;
 
 /**

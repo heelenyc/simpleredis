@@ -4,7 +4,7 @@ import com.heelenyc.simpleredis.api.reply.RedisReply;
 import com.heelenyc.simpleredis.handler.AbstractRedisCommandHandler;
 import com.heelenyc.simpleredis.reply.ErrorReply;
 import com.heelenyc.simpleredis.reply.SimpleStringReply;
-import com.heelenyc.simpleredis.server.AbstractRedisServer;
+import com.heelenyc.simpleredis.server.SimpleRedisServer;
 
 /**
  * @author yicheng
@@ -18,7 +18,7 @@ public class SimpleRedisDemo {
      */
     public static void main(String[] args) throws Exception {
 
-        new AbstractRedisServer(new AbstractRedisCommandHandler() {
+        new SimpleRedisServer(new AbstractRedisCommandHandler() {
             @Override
             protected RedisReply<?> set(String key, String value) {
 

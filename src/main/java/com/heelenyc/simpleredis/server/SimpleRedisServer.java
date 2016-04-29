@@ -1,5 +1,6 @@
 package com.heelenyc.simpleredis.server;
 
+import heelenyc.commonlib.NamedThreadFactory;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.channel.AdaptiveRecvByteBufAllocator;
@@ -14,7 +15,6 @@ import io.netty.handler.timeout.IdleStateHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.heelenyc.commonlib.NamedThreadFactory;
 import com.heelenyc.simpleredis.api.IRedisServer;
 import com.heelenyc.simpleredis.coder.RedisCommandDecoder;
 import com.heelenyc.simpleredis.coder.RedisReplyEncoder;
@@ -25,7 +25,7 @@ import com.heelenyc.simpleredis.handler.AbstractRedisCommandHandler;
  * @since 2016年1月11日
  * 
  */
-public class AbstractRedisServer implements IRedisServer {
+public class SimpleRedisServer implements IRedisServer {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -39,7 +39,7 @@ public class AbstractRedisServer implements IRedisServer {
     /**
      * 
      */
-    public AbstractRedisServer(AbstractRedisCommandHandler redisHandler) {
+    public SimpleRedisServer(AbstractRedisCommandHandler redisHandler) {
         this.redisHandler = redisHandler;
     }
 
